@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Women’s Rights</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --maroon:#6f0f1a;
+  --deep-maroon:#4b0810;
+  --soft-pink:#f6d9d9;
+  --accent:#e9b8bd;
+  --muted:#6b6b6b;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Poppins',sans-serif;
+  color:#222;
+  background:linear-gradient(180deg,var(--soft-pink),#fff);
+  line-height:1.7;
+  overflow-x:hidden;
+}
+header{
+  background:#fff;
+  padding:18px 6%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  box-shadow:0 3px 10px rgba(0,0,0,0.05);
+}
+header h1{font-family:'Playfair Display',serif;color:var(--deep-maroon);font-size:24px}
+header a{
+  color:var(--maroon);
+  text-decoration:none;
+  font-weight:600;
+  background:var(--soft-pink);
+  padding:8px 14px;
+  border-radius:8px;
+}
+.hero{
+  background:linear-gradient(rgba(111,15,26,0.7),rgba(111,15,26,0.7)),
+  url('web project/women-rights-banner.jpg') center/cover;
+  color:#fff;
+  text-align:center;
+  padding:100px 10%;
+}
+.hero h2{font-family:'Playfair Display',serif;font-size:42px;margin-bottom:10px;}
+.hero p{max-width:700px;margin:auto;font-size:18px;}
+
+.section{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:space-between;
+  gap:40px;
+  padding:80px 10%;
+}
+.section img{
+  width:420px;
+  border-radius:10px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.15);
+}
+.section .text{
+  flex:1;
+  min-width:300px;
+}
+.section h3{
+  font-family:'Playfair Display',serif;
+  color:var(--deep-maroon);
+  font-size:26px;
+  margin-bottom:12px;
+}
+.section p{
+  color:#444;
+  margin-bottom:16px;
+  font-size:15px;
+}
+.section ul{
+  color:#444;
+  margin-left:20px;
+  line-height:1.8;
+}
+
+.read-more{
+  display:inline-block;
+  background:var(--maroon);
+  color:#fff;
+  padding:10px 18px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:600;
+  transition:background 0.3s;
+}
+.read-more:hover{
+  background:var(--deep-maroon);
+}
+
+.quote{
+  background:linear-gradient(135deg,#fff,var(--soft-pink));
+  padding:50px 8%;
+  text-align:center;
+  font-style:italic;
+  color:var(--maroon);
+  font-size:18px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.05);
+}
+.quote span{display:block;margin-top:10px;font-weight:600;color:var(--deep-maroon);}
+
+.key-figures{
+  padding:60px 8%;
+  background:#fff;
+}
+.key-figures h3{
+  text-align:center;
+  color:var(--maroon);
+  font-family:'Playfair Display',serif;
+  font-size:28px;
+  margin-bottom:30px;
+}
+.org-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+}
+.org-card{
+  background:linear-gradient(145deg,#fff,#fbe8ea);
+  border-radius:10px;
+  padding:20px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.05);
+  transition:transform .3s;
+}
+.org-card:hover{transform:translateY(-6px);}
+.org-card h4{color:var(--deep-maroon);margin-bottom:8px;}
+.org-card p{color:#555;font-size:14px;margin-bottom:10px;}
+footer{
+  text-align:center;
+  padding:40px 10%;
+  background:var(--deep-maroon);
+  color:#fff;
+}
+footer a{
+  background:#fff;
+  color:var(--deep-maroon);
+  padding:8px 14px;
+  text-decoration:none;
+  border-radius:6px;
+  font-weight:600;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Women Empowerment</h1>
+  <a href="index.html">← Back to Timeline</a>
+</header>
+
+<section class="hero">
+  <h2>Women’s Rights</h2>
+  <p>Understanding the journey, struggles, and achievements that secured women the fundamental rights they deserve — equality, safety, education, and dignity.</p>
+</section>
+
+<section class="section">
+  <div class="text">
+    <h3>What Are Women’s Rights?</h3>
+    <p>Women’s rights are the freedoms and entitlements of women and girls of all ages. These rights include the right to education, employment, equal pay, health care, property, voting, and freedom from violence or discrimination.</p>
+    <p>They are an integral part of universal human rights, established and protected through both global and national efforts over centuries.</p>
+  </div>
+  <img src="./images/right to eduaction.jpg" alt="Women Rights Education">
+</section>
+
+<section class="section" style="flex-direction:row-reverse;background:#fff7f7;">
+  <div class="text">
+    <h3>Major Legal Acts for Women in India</h3>
+    <ul>
+      <li><strong>The Hindu Succession Act (1956):</strong> Grants equal inheritance rights.</li>
+      <li><strong>The Dowry Prohibition Act (1961):</strong> Prohibits giving or taking of dowry.</li>
+      <li><strong>The Equal Remuneration Act (1976):</strong> Ensures equal pay for equal work.</li>
+      <li><strong>The Protection of Women from Domestic Violence Act (2005):</strong> Provides legal protection against domestic abuse.</li>
+      <li><strong>The Sexual Harassment of Women at Workplace Act (2013):</strong> Safeguards women’s dignity at work.</li>
+    </ul>
+    <a class="read-more" href="https://en.wikipedia.org/wiki/Women%27s_rights_in_India" target="_blank">Read More on Wikipedia</a>
+  </div>
+  <img src="./images/law rights 222.jpg" alt="Women Law Rights">
+</section>
+
+<div class="quote">
+  “Human rights are women’s rights and women’s rights are human rights — once and for all.”  
+  <span>— Hillary Clinton</span>
+</div>
+
+<section class="key-figures">
+  <h3>Global Organizations Working for Women’s Rights</h3>
+  <div class="org-grid">
+    <div class="org-card">
+      <h4>UN Women</h4>
+      <p>United Nations entity dedicated to gender equality and the empowerment of women.</p>
+      <a class="read-more" href="https://en.wikipedia.org/wiki/UN_Women" target="_blank">Read More</a>
+    </div>
+    <div class="org-card">
+      <h4>National Commission for Women (NCW)</h4>
+      <p>India’s statutory body ensuring women’s welfare and investigating rights violations.</p>
+      <a class="read-more" href="https://en.wikipedia.org/wiki/National_Commission_for_Women" target="_blank">Read More</a>
+    </div>
+    <div class="org-card">
+      <h4>Amnesty International</h4>
+      <p>Global organization that campaigns for human rights, including women's freedom and safety.</p>
+      <a class="read-more" href="https://en.wikipedia.org/wiki/Amnesty_International" target="_blank">Read More</a>
+    </div>
+    <div class="org-card">
+      <h4>CARE International</h4>
+      <p>Fights global poverty by empowering women and promoting gender equality.</p>
+      <a class="read-more" href="https://en.wikipedia.org/wiki/CARE_(relief_agency)" target="_blank">Read More</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Empowering Women through Knowledge and Equality</p><br>
+  <a href="index.html">← Back to Timeline</a>
+</footer>
+
+</body>
+</html>

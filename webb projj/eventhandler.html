@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Event Handling Example</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(120deg, #a1c4fd, #c2e9fb);
+      text-align: center;
+      padding: 50px;
+      color: #333;
+    }
+
+    h1 {
+      color: #222;
+      text-shadow: 1px 1px 2px #aaa;
+    }
+
+    .event-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+      justify-items: center;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      width: 260px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    button {
+      padding: 12px 25px;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #764ba2, #667eea);
+    }
+
+    #display {
+      margin-top: 40px;
+      padding: 20px;
+      width: 400px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: 500;
+    }
+
+    input, select {
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 8px;
+      border: 2px solid #bbb;
+      outline: none;
+      font-size: 15px;
+      transition: border-color 0.3s;
+    }
+
+    input:focus, select:focus {
+      border-color: #667eea;
+    }
+  </style>
+</head>
+<body>
+
+  <h1> JavaScript Event Handling Demo </h1>
+  <p>Each button below shows a different type of event in action.</p>
+
+  <div class="event-container">
+    <div class="card">
+      <h3>1️ Click Event</h3>
+      <button id="clickBtn">Click Me</button>
+    </div>
+
+    <div class="card">
+      <h3>2️ Double Click Event</h3>
+      <button id="dblBtn">Double Click Me</button>
+    </div>
+
+    <div class="card">
+      <h3>3️ Mouse Over Event</h3>
+      <button id="hoverBtn">Hover Over Me</button>
+    </div>
+
+    <div class="card">
+      <h3>4️ Key Press Event</h3>
+      <input type="text" id="keyInput" placeholder="Type something...">
+    </div>
+
+    <div class="card">
+      <h3>5️ Change Event</h3>
+      <select id="colorSelect">
+        <option value="">Choose Background</option>
+        <option value="#ffd6e0">Pink</option>
+        <option value="#c8e7ff">Blue</option>
+        <option value="#d4f8d4">Green</option>
+      </select>
+    </div>
+  </div>
+
+  <div id="display"> Event output will appear here...</div>
+
+  <script>
+    const display = document.getElementById("display");
+
+    // 1️⃣ Click event
+    document.getElementById("clickBtn").addEventListener("click", () => {
+      display.innerText = "Button Clicked!";
+      display.style.background = "#d4f8d4";
+    });
+
+    // 2️⃣ Double Click event
+    document.getElementById("dblBtn").addEventListener("dblclick", () => {
+      display.innerText = " Double Click Detected!";
+      display.style.background = "#ffd6e0";
+    });
+
+    // 3️⃣ Mouse Over event
+    const hoverBtn = document.getElementById("hoverBtn");
+    hoverBtn.addEventListener("mouseover", () => {
+      display.innerText = "🖱️ Mouse is hovering!";
+      hoverBtn.style.background = "linear-gradient(135deg, #ff9a9e, #fad0c4)";
+    });
+    hoverBtn.addEventListener("mouseout", () => {
+      display.innerText = "💬 Mouse left the button!";
+      hoverBtn.style.background = "linear-gradient(135deg, #667eea, #764ba2)";
+    });
+
+    // 4️⃣ Key Press event
+    document.getElementById("keyInput").addEventListener("keydown", (e) => {
+      display.innerText = `⌨️ You pressed: "${e.key}"`;
+      display.style.background = "#c2e9fb";
+    });
+
+    // 5️⃣ Change event
+    document.getElementById("colorSelect").addEventListener("change", (e) => {
+      document.body.style.background = e.target.value;
+      display.innerText = " Background color changed!";
+    });
+  </script>
+
+</body>
+</html>

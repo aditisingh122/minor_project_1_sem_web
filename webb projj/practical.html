@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Women Empowerment</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --maroon:#6f0f1a;--deep:#4b0810;--pink:#f6d9d9;--muted:#6b6b6b;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Poppins,sans-serif;color:#222;line-height:1.6;background:linear-gradient(var(--pink),#fff);}
+header{display:flex;justify-content:space-between;align-items:center;padding:15px 6%;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.05);position:sticky;top:0;z-index:10;}
+.logo{display:flex;align-items:center;gap:10px}
+.symbol{width:50px;height:50px;border-radius:50%;background:var(--maroon);color:#fff;display:flex;align-items:center;justify-content:center;font-family:"Playfair Display";font-weight:700}
+nav a{text-decoration:none;color:var(--deep);margin:0 10px;font-weight:600}
+nav a:hover{color:var(--maroon)}
+.cta{background:var(--maroon);color:#fff;padding:6px 12px;border-radius:6px}
+.hero{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;color:#fff;background:linear-gradient(rgba(111,15,26,.8),rgba(242,191,194,.5)),url("https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1600&auto=format&fit=crop")center/cover;padding:80px 8%;}
+.hero h2{font-family:"Playfair Display";font-size:42px}
+.hero p{max-width:600px;margin:20px 0}
+.btn{padding:10px 16px;border-radius:8px;font-weight:600;text-decoration:none;margin-right:10px}
+.btn-primary{background:#fff;color:var(--deep)}
+.btn-outline{border:2px solid #fff;color:#fff}
+section{padding:60px 8%;text-align:center}
+.section-title h3{color:var(--maroon);font-family:"Playfair Display"}
+.timeline-item,.woman-card,.right-card,.field,.ngo{background:#fff;border-radius:12px;box-shadow:0 4px 10px rgba(0,0,0,.08);margin-bottom:40px;overflow:hidden;transition:.3s}
+.timeline-item:hover,.woman-card:hover,.right-card:hover,.field:hover{transform:translateY(-5px)}
+.timeline-item{display:flex;flex-wrap:wrap;align-items:center}
+.timeline-item img{width:50%;height:250px;object-fit:cover}
+.timeline-item .content{width:50%;padding:25px;text-align:left}
+.women-grid,.rights-timeline,.fields-grid,.ngo-list{display:grid;gap:25px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:30px}
+.woman-card img{width:100%;height:220px;object-fit:cover;border-radius:10px;margin-bottom:10px}
+.right-card{background:linear-gradient(135deg,#f5b5c5,#fff)}
+footer{background:var(--deep);color:#fff;padding:15px;text-align:center;font-size:14px}
+@media(max-width:768px){.hero{text-align:center}.timeline-item img,.timeline-item .content{width:100%}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo"><div class="symbol">WE</div><h2 style="color:var(--deep);font-size:20px;">Women Empowerment</h2></div>
+  <nav>
+    <a href="#history">History</a><a href="#heroes">Women</a><a href="#rights">Rights</a>
+    <a href="#fields">Fields</a><a href="#ngos">NGOs</a><a class="cta" href="about.html">About</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h2>Empowering Women Everywhere</h2>
+    <p>Explore milestones, stories, and organizations driving gender equality.</p>
+    <a href="#heroes" class="btn btn-primary">Explore Stories</a>
+    <a href="#ngos" class="btn btn-outline">Find Support</a>
+  </div>
+</section>
+
+<section id="history">
+  <div class="section-title"><h3>History & Timeline</h3><p>Tracing the evolution of women’s empowerment.</p></div>
+  <div class="timeline-item"><img src="./images/Women’s Suffrage Movement 222.jpg"><div class="content"><h4>Suffrage Movement</h4><p>Fighting for education, equality & voting rights.</p></div></div>
+  <div class="timeline-item"><img src="./images/Digital & Social Revolution (2010s–Present).webp"><div class="content"><h4>Digital Revolution</h4><p>Women leading change from #MeToo to STEM.</p></div></div>
+</section>
+
+<section id="heroes">
+  <div class="section-title"><h3>Successful Women</h3></div>
+  <div class="women-grid">
+    <div class="woman-card"><img src="./images/kalpana.jpg"><h4>Kalpana Chawla</h4><p>First Indian-born woman in space.</p></div>
+    <div class="woman-card"><img src="./images/malala.jpg"><h4>Malala Yousafzai</h4><p>Global advocate for girls’ education.</p></div>
+  </div>
+</section>
+
+<section id="rights">
+  <div class="section-title"><h3>Women’s Rights</h3></div>
+  <div class="rights-timeline">
+    <div class="right-card"><h4>Education</h4><p>Equal access to learning opportunities.</p></div>
+    <div class="right-card"><h4>Workplace Equality</h4><p>Fair pay and anti-discrimination laws.</p></div>
+  </div>
+</section>
+
+<section id="fields">
+  <div class="section-title"><h3>Fields of Achievement</h3></div>
+  <div class="fields-grid">
+    <div class="field"><h4>Politics</h4><p>Women shaping global policies.</p></div>
+    <div class="field"><h4>Technology</h4><p>Innovating in the digital world.</p></div>
+  </div>
+</section>
+
+<section id="ngos">
+  <div class="section-title"><h3>Supporting NGOs</h3></div>
+  <div class="ngo-list">
+    <div class="ngo"><h4>SEWA</h4><p>Empowers women workers.</p><a href="https://www.sewa.org" target="_blank">Visit →</a></div>
+    <div class="ngo"><h4>CARE India</h4><p>Promotes women’s health & education.</p><a href="https://www.careindia.org" target="_blank">Visit →</a></div>
+  </div>
+</section>
+
+<footer>© 2025 Women Empowerment | All Rights Reserved</footer>
+</body>
+</html>

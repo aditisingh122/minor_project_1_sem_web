@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Women Empowerment — Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --maroon:#6f0f1a;
+      --deep-maroon:#4b0810;
+      --soft-pink:#f6d9d9;
+      --warm-pink:#f2bfc2;
+      --accent:#e9b8bd;
+      --muted:#6b6b6b;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:Poppins,system-ui,Arial;
+      line-height:1.6;
+      color:#222;
+      background:linear-gradient(180deg,var(--soft-pink),#fff 60%);
+      overflow-x:hidden;
+    }
+
+    /* Header */
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:16px 6%;
+      background:#fff;
+      box-shadow:0 2px 10px rgba(0,0,0,0.05);
+      position:sticky;
+      top:0;
+      z-index:10;
+    }
+    .logo{display:flex;align-items:center;gap:10px}
+    .symbol{
+      width:60px;height:60px;border-radius:50%;
+      background:linear-gradient(135deg,var(--maroon),var(--deep-maroon));
+      display:flex;align-items:center;justify-content:center;
+      color:#fff;font-weight:700;font-family:Playfair Display,serif;font-size:20px;
+    }
+    nav{display:flex;gap:20px}
+    nav a{
+      text-decoration:none;
+      color:var(--deep-maroon);
+      font-weight:600;
+      transition:color .3s;
+    }
+    nav a:hover{color:var(--maroon)}
+    .cta{
+      background:var(--maroon);color:#fff;padding:8px 14px;
+      border-radius:8px;text-decoration:none;font-weight:600;
+    }
+
+    /* Hero */
+    .hero{
+      width:100%;
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      justify-content:space-between;
+      background:linear-gradient(90deg,rgba(111,15,26,0.8),rgba(242,191,194,0.5)), url("https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1600&auto=format&fit=crop") center/cover;
+      color:#fff;
+      padding:80px 8%;
+    }
+    .hero h2{font-family:Playfair Display,serif;font-size:48px;margin-bottom:20px}
+    .hero p{max-width:600px;margin-bottom:24px}
+    .btn-primary,.btn-outline{
+      padding:12px 20px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:600;
+      margin-right:10px;
+    }
+    .btn-primary{background:#fff;color:var(--deep-maroon)}
+    .btn-outline{border:2px solid #fff;color:#fff}
+    .hero img{width:420px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.2);}
+
+    /* Sections */
+    section{padding:60px 8%}
+    .section-title h3{
+      font-family:Playfair Display,serif;
+      font-size:28px;
+      color:var(--deep-maroon);
+    }
+    .section-title p{color:var(--muted);margin-top:4px}
+
+    /* 🌸 Timeline */
+    #history {
+      background: linear-gradient(180deg, var(--soft-pink), #fff);
+      padding: 80px 8%;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .section-title h3 {
+      color: var(--maroon);
+      font-size: 2rem;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+    .section-title p {
+      color: var(--muted);
+      font-size: 1rem;
+    }
+    .timeline-container {
+      max-width: 1100px;
+      margin: auto;
+    }
+    .timeline-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      margin-bottom: 80px;
+      background: #fff;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .timeline-item:nth-child(even) {
+      flex-direction: row-reverse;
+      background: linear-gradient(145deg, #fff, #fbe8ea);
+    }
+    .timeline-item:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    }
+    .timeline-item .img-box {
+      width: 45%;
+      height: 300px;
+      overflow: hidden;
+    }
+    .timeline-item .img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .timeline-item:hover .img-box img {transform: scale(1.05);}
+    .timeline-item .content {width: 55%;padding: 35px;}
+    .timeline-item h4 {color: var(--maroon);margin-bottom: 12px;}
+    .timeline-item p {color: #444;line-height: 1.6;margin-bottom: 16px;}
+    .btn-read {
+      background: var(--maroon);
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    /* 🌸 Successful Women */
+    .successful-women{
+      background:linear-gradient(135deg,#fdf4f5,#fff);
+      text-align:center;
+      padding:80px 10%;
+    }
+    .successful-women h2{color:#6f0f1a;font-family:'Playfair Display',serif;font-size:30px;margin-bottom:40px;}
+    .women-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;}
+    .woman-card{
+      background:#fff;border-radius:14px;box-shadow:0 4px 12px rgba(0,0,0,0.1);
+      padding:20px;transition:transform .3s;
+    }
+    .woman-card:hover{transform:translateY(-5px);}
+    .woman-card img{width:100%;height:250px;object-fit:cover;border-radius:10px;margin-bottom:15px;}
+    .woman-card h3{color:#6f0f1a;margin-bottom:8px;}
+
+    /* 🌸 Women's Rights */
+    .rights-section{background:#fff;padding:80px 10%;text-align:center;}
+    .rights-section h2{color:#6f0f1a;font-family:'Playfair Display',serif;font-size:28px;margin-bottom:40px;}
+    .rights-timeline{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:30px;}
+    .right-card{
+      background:linear-gradient(135deg,#f5b5c5,#fff);border-radius:14px;padding:25px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.08);transition:transform .3s;
+    }
+    .right-card:hover{transform:translateY(-6px);}
+    .right-card h4{color:#4b0810;margin-bottom:10px;}
+
+    /* 🌸 Fields Section */
+    .fields-section{
+      background:linear-gradient(135deg,#fff,#fdf4f5);
+      padding:80px 10%;
+      text-align:center;
+    }
+    .fields-section h2{color:#6f0f1a;font-family:'Playfair Display',serif;font-size:28px;margin-bottom:40px;}
+    .fields-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:30px;}
+    .field{
+      background:#fff;border-radius:14px;box-shadow:0 4px 10px rgba(0,0,0,0.08);
+      padding:25px;transition:transform .3s;
+    }
+    .field:hover{transform:translateY(-5px);}
+    .field i{font-size:30px;display:block;margin-bottom:10px;}
+    .field h4{color:#4b0810;margin-bottom:8px;}
+
+    /* NGOs */
+    .ngo-section{
+      background:linear-gradient(180deg,#fff,var(--soft-pink));
+      padding:60px 8%;
+    }
+    .ngo-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-top:30px;}
+    .ngo{background:#fff;border-radius:10px;padding:20px;box-shadow:0 4px 10px rgba(0,0,0,0.05);}
+    .ngo h4{color:var(--maroon);margin-bottom:8px}
+    .ngo a{color:var(--deep-maroon);text-decoration:none;font-weight:600}
+
+    footer{background:var(--deep-maroon);color:#fff;text-align:center;padding:20px 8%;font-size:14px;}
+    @media(max-width:768px){.hero{flex-direction:column;text-align:center}.hero img{margin-top:20px;width:90%}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <div class="symbol">WE</div>
+      <div>
+        <h2 style="font-size:20px;color:var(--deep-maroon)">Women Empowerment</h2>
+        <div style="font-size:12px;color:var(--muted)">Stories • Rights • Achievements</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#history">History</a>
+      <a href="successful-women.html">Successful Women</a>
+      <a href="#fields">Fields</a>
+      <a href="#ngos">NGOs</a>
+      <a href="woman_rights.html">Rights</a>
+      <a class="cta" href="about.html">About</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h2>Empowering Women Everywhere</h2>
+      <p>Explore milestones, stories, and organizations leading the movement for gender equality. Together, we build a stronger future.</p>
+      <a href="#heroes" class="btn-primary">Explore Stories</a>
+      <a href="#ngos" class="btn-outline">Find Support</a>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section id="history">
+    <div class="section-title">
+      <h3>History & Timeline</h3>
+      <p>Discover how the fight for equality evolved through the decades.</p>
+    </div>
+    <div class="timeline-container">
+      <div class="timeline-item">
+        <div class="img-box"><img src="./images/Women’s Suffrage Movement 222.jpg"></div>
+        <div class="content"><h4>Women’s Suffrage Movement (1800s–1900s)</h4><p>The foundation of women’s empowerment — a revolution demanding education, voting rights, and equality.</p><a href="era1.html" class="btn-read">Read More →</a></div>
+      </div>
+      <div class="timeline-item">
+        <div class="img-box"><img src="./Post-Independence Progress.jpg"></div>
+        <div class="content"><h4>Post-Independence Progress (1940s–1960s)</h4><p>After independence, women like Sarojini Naidu and Indira Gandhi proved leadership knows no gender.</p><a href="era2.html" class="btn-read">Read More →</a></div>
+      </div>
+      <div class="timeline-item">
+        <div class="img-box"><img src="./images/Legal & Workplace Rights (1970s–1980s).jpg"></div>
+        <div class="content"><h4>Legal & Workplace Rights (1970s–1980s)</h4><p>New laws against dowry, workplace harassment, and discrimination empowered women.</p><a href="era3.html" class="btn-read">Read More →</a></div>
+      </div>
+      <div class="timeline-item">
+        <div class="img-box"><img src="./images/abcdefghij.jpg"></div>
+        <div class="content"><h4>Global Empowerment (1990s–2000s)</h4><p>Women’s voices resonated worldwide. The UN’s Beijing Declaration expanded equality globally.</p><a href="era4.html" class="btn-read">Read More →</a></div>
+      </div>
+      <div class="timeline-item">
+        <div class="img-box"><img src="./images/Digital & Social Revolution (2010s–Present).webp"></div>
+        <div class="content"><h4>Digital & Social Revolution (2010s–Present)</h4><p>Women drive change through digital platforms — from #MeToo to leadership in STEM.</p><a href="era5.html" class="btn-read">Read More →</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!--  Successful Women -->
+  <section class="successful-women" id="heroes">
+    <h2>🌟 Successful Women Who Inspired the World</h2>
+    <div class="women-grid">
+      <div class="woman-card"><img src="./images/astronaut-kalpana-chawla-a-41-year-old-flight-engineer-and-news-photo-1612467951_.avif"><h3>Kalpana Chawla</h3><p>First Indian-born woman in space, inspiring millions through her courage.</p></div>
+      <div class="woman-card"><img src="./images/Malala Yousafzai.jpg"><h3>Malala Yousafzai</h3><p>Nobel Peace Prize laureate who became a global symbol for girls’ education.</p></div>
+      <div class="woman-card"><img src="./images/Indira Gandhi.jpg"><h3>Indira Gandhi</h3><p>India’s first and only female Prime Minister who redefined leadership.</p></div>
+      <div class="woman-card"><img src="./images/Mother Teresa.jpg"><h3>Mother Teresa</h3><p>Renowned for her selfless humanitarian work and compassion.</p></div>
+    </div>
+  </section>
+
+  <!--  Women's Rights -->
+  <section class="rights-section" id="rights">
+    <h2>⚖️ Women’s Rights: A Journey Toward Equality</h2>
+    <div class="rights-timeline">
+      <div class="right-card"><h4>Education Rights</h4><p>Women gained access to education, opening doors to universities and careers.</p></div>
+      <div class="right-card"><h4>Voting Rights</h4><p>Women fought and won the right to vote, reshaping democracies.</p></div>
+      <div class="right-card"><h4>Workplace Equality</h4><p>Laws promoting equal pay, maternity leave, and fair work environments.</p></div>
+      <div class="right-card"><h4>Safety & Protection</h4><p>Legal reforms addressing violence and harassment empower women to live freely.</p></div>
+    </div>
+  </section>
+
+  <!--  Fields of Achievement -->
+  <section class="fields-section" id="fields">
+    <h2>💪 Fields Where Women Are Excelling</h2>
+    <div class="fields-grid">
+      <div class="field"><i>👩‍⚖️</i><h4>Politics & Leadership</h4><p>Women are shaping policies and leading nations globally.</p></div>
+      <div class="field"><i>🧬</i><h4>Science & Research</h4><p>Women are driving discoveries in medicine, space, and technology.</p></div>
+      <div class="field"><i>💻</i><h4>Technology & Innovation</h4><p>From startups to big tech, women are redefining innovation.</p></div>
+      <div class="field"><i>🎨</i><h4>Arts & Media</h4><p>Empowering voices in cinema, writing, and design.</p></div>
+      <div class="field"><i>🏆</i><h4>Sports</h4><p>Women athletes are breaking world records and stereotypes.</p></div>
+    </div>
+  </section>
+
+  <!-- NGOs -->
+  <section id="ngos" class="ngo-section">
+    <div class="section-title"><h3>NGOs Helping Women</h3><p>Organizations offering legal, educational, and social support.</p></div>
+    <div class="ngo-list">
+      <div class="ngo"><h4>SEWA</h4><p>Empowers women workers through training and support.</p><a href="https://www.sewa.org" target="_blank">Visit Website →</a></div>
+      <div class="ngo"><h4>Nanhi Kali</h4><p>Provides education to underprivileged girls across India.</p><a href="https://www.projectnanhikali.com" target="_blank">Visit Website →</a></div>
+      <div class="ngo"><h4>CARE India</h4><p>Works on health, education, and livelihoods for women and girls.</p><a href="https://www.careindia.org" target="_blank">Visit Website →</a></div>
+      <div class="ngo"><h4>Majlis Legal Centre</h4><p>Provides legal aid to women survivors of domestic violence.</p><a href="https://majlisbombay.org" target="_blank">Visit Website →</a></div>
+    </div>
+  </section>
+
+  <footer>Women Empowerment ~ Made By Aditi.</footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
