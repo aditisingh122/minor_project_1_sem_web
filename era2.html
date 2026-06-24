@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Post-Independence Progress (1940s–1960s)</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --maroon:#6f0f1a;
+  --deep-maroon:#4b0810;
+  --soft-pink:#f6d9d9;
+  --warm-pink:#f2bfc2;
+  --muted:#6b6b6b;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Poppins',sans-serif;
+  background:linear-gradient(180deg,var(--soft-pink),#fff);
+  color:#222;
+  line-height:1.7;
+  overflow-x:hidden;
+}
+
+/* Header */
+header{
+  background:#fff;
+  padding:18px 6%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  box-shadow:0 3px 10px rgba(0,0,0,0.05);
+}
+header h1{font-family:'Playfair Display',serif;color:var(--deep-maroon);font-size:24px}
+header a{
+  color:var(--maroon);
+  text-decoration:none;
+  font-weight:600;
+  background:var(--soft-pink);
+  padding:8px 14px;
+  border-radius:8px;
+}
+
+/* Hero */
+.hero{
+  background:linear-gradient(rgba(111,15,26,0.7),rgba(111,15,26,0.7)),
+  url('https://upload.wikimedia.org/wikipedia/commons/7/79/Sarojini_Naidu_in_London_1919.jpg') center/cover;
+  color:#fff;
+  text-align:center;
+  padding:100px 10%;
+}
+.hero h2{font-family:'Playfair Display',serif;font-size:42px;margin-bottom:10px;}
+.hero p{max-width:700px;margin:auto;font-size:18px;}
+
+/* Timeline Section */
+.timeline{
+  position:relative;
+  max-width:1000px;
+  margin:80px auto;
+  padding:20px;
+}
+.timeline::before{
+  content:'';
+  position:absolute;
+  width:4px;
+  background:var(--maroon);
+  top:0;
+  bottom:0;
+  left:50%;
+  margin-left:-2px;
+}
+.timeline-item{
+  padding:20px 40px;
+  position:relative;
+  width:50%;
+}
+.timeline-item::after{
+  content:'';
+  position:absolute;
+  width:20px;height:20px;
+  background:#fff;
+  border:4px solid var(--deep-maroon);
+  top:30px;
+  right:-10px;
+  border-radius:50%;
+  z-index:1;
+}
+.timeline-item.left{left:0;}
+.timeline-item.right{left:50%;}
+.timeline-item.right::after{left:-10px;}
+.timeline-item .content{
+  background:#fff;
+  padding:20px 25px;
+  border-radius:10px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+.timeline-item .content h3{
+  color:var(--deep-maroon);
+  margin-bottom:10px;
+  font-size:20px;
+}
+.timeline-item .content p{color:#444;font-size:15px;}
+
+/* Responsive timeline */
+@media screen and (max-width: 768px){
+  .timeline::before{left:20px;}
+  .timeline-item{width:100%;padding-left:60px;}
+  .timeline-item.right{left:0;}
+  .timeline-item::after{left:8px;}
+}
+
+/* Highlight Quote */
+.quote{
+  text-align:center;
+  background:linear-gradient(135deg,#fff,var(--soft-pink));
+  color:var(--maroon);
+  padding:60px 10%;
+  font-style:italic;
+  box-shadow:0 4px 12px rgba(0,0,0,0.05);
+}
+.quote span{display:block;margin-top:10px;font-weight:600;color:var(--deep-maroon);}
+
+/* Achievements Section */
+.achievements{
+  padding:80px 10%;
+  background:#fff;
+  text-align:center;
+}
+.achievements h3{
+  color:var(--deep-maroon);
+  font-family:'Playfair Display',serif;
+  font-size:28px;
+  margin-bottom:40px;
+}
+.stats{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:30px;
+}
+.stat{
+  background:linear-gradient(145deg,#fff,#fbe8ea);
+  border-radius:12px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.05);
+  width:200px;
+  padding:25px;
+  transition:transform .3s;
+}
+.stat:hover{transform:translateY(-6px);}
+.stat h4{color:var(--maroon);font-size:22px;}
+.stat p{color:#555;font-size:14px;margin-top:8px;}
+
+footer{
+  text-align:center;
+  padding:40px 10%;
+  background:var(--deep-maroon);
+  color:#fff;
+}
+footer a{
+  background:#fff;
+  color:var(--deep-maroon);
+  padding:8px 14px;
+  text-decoration:none;
+  border-radius:6px;
+  font-weight:600;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Women Empowerment</h1>
+  <a href="index.html">← Back to Timeline</a>
+</header>
+
+<section class="hero">
+  <h2>Post-Independence Progress</h2>
+  <p>From freedom to leadership — the decades following independence saw women redefining politics, education, and governance in India and across the world.</p>
+</section>
+
+<section class="timeline">
+  <div class="timeline-item left">
+    <div class="content">
+      <h3>1947 — A New Constitution for Equality</h3>
+      <p>The Constitution of India guaranteed women equal rights to vote, work, and own property — setting a legal foundation for gender equality in the world’s largest democracy.</p>
+    </div>
+  </div>
+
+  <div class="timeline-item right">
+    <div class="content">
+      <h3>1951 — First General Elections</h3>
+      <p>Millions of Indian women cast their votes for the first time. It marked the beginning of women’s active participation in democratic governance.</p>
+    </div>
+  </div>
+
+  <div class="timeline-item left">
+    <div class="content">
+      <h3>1956 — Hindu Code Bills</h3>
+      <p>The introduction of progressive laws on marriage, inheritance, and adoption gave women unprecedented social and legal freedoms.</p>
+    </div>
+  </div>
+
+  <div class="timeline-item right">
+    <div class="content">
+      <h3>1966 — India’s First Woman Prime Minister</h3>
+      <p>Indira Gandhi became a symbol of leadership and strength, inspiring generations of women to pursue roles in politics and administration.</p>
+    </div>
+  </div>
+</section>
+
+<div class="quote">
+  “We want deeper sincerity of motive, a greater courage in speech, and earnestness in action.”  
+  <span>— Sarojini Naidu</span>
+</div>
+
+<section class="achievements">
+  <h3>Achievements of the Era</h3>
+  <div class="stats">
+    <div class="stat">
+      <h4>1947</h4>
+      <p>Universal suffrage guaranteed by law.</p>
+    </div>
+    <div class="stat">
+      <h4>1950s</h4>
+      <p>Women enter civil services and higher education in record numbers.</p>
+    </div>
+    <div class="stat">
+      <h4>1960s</h4>
+      <p>First women-led cooperatives and industries established.</p>
+    </div>
+    <div class="stat">
+      <h4>+40%</h4>
+      <p>Rise in women’s literacy rates during this period.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Era 2 — Post-Independence Progress</p><br>
+  <a href="index.html">← Back to Timeline</a>
+</footer>
+
+</body>
+</html>
